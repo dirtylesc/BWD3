@@ -766,7 +766,7 @@ footer img {
 .log_function .container {
   max-height: max-content;
   width: 28%;
-  background: url(/Images/log_bg.jpg);
+  background: url(../Images/log_bg.jpg);
   margin: 0 auto;
   padding: 2.7rem;
   border-top: 3px solid #3b66f5;
