@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="stylesheet" href="../css/user_info.css">
+  <link rel="stylesheet" href="../css/style_2.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>User Infomation - DirtyLesc</title>
+</head>
+
+<body>
+  <div class="root">
+    <div class="user_info position-fixed col-12 flex align-items-center justify-content-center"
+      style="z-index: 50; width: 100%; height: 100%;">
+      <div class="nothing" id="nothing" style="z-index: 40;"></div>
+      <div class="container rounded bg-white  col-8" style="z-index: 41; box-shadow: 0 0 10px rgb(59, 102, 245, .7)">
+        <div class="row root"></div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="head col-md-12 container-fluid position-fixed">
+        <div class="bar d-flex">
+          <div class="bar_smaller">
+            <i class="fas fa-bars" id="bar_smaller_icon"></i>
+          </div>
+          <div class="bar_logo flex-grow-1 justify-content-lg-start align-content-center">
+            <a href="index.html" class=""><img src="../Images/logo_2.jpg" alt="" /></a>
+          </div>
+          <div class="bar_list flex-grow-2 justify-content-center align-items-center">
+            <ul class="main_ul align-items-center">
+              <li>
+                <a href="index.html">Home</i></a>
+              </li>
+              <li class="position-relative">
+                <a href="">Pages<i class="fas fa-angle-down"></i></a>
+                <div class="menu position-absolute">
+                  <ul>
+                    <li><a href="discography.html">Discography</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="">Find a store</a></li>
+                    <li><a href="">FAQ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="position-relative">
+                <a href="">Shop<i class="fas fa-angle-down"></i></a>
+                <div class="menu position-absolute">
+                  <ul>
+                    <li><a href="discography.html">Discography</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="">Find a store</a></li>
+                    <li><a href="">FAQ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="position-relative">
+                <a href="">Blog<i class="fas fa-angle-down"></i></a>
+                <div class="menu position-absolute">
+                  <ul>
+                    <li><a href="">Blog Grid</a></li>
+                    <li><a href="">Blog List</a></li>
+                    <li><a href="">Blog Details</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="bar_function flex-grow-1 justify-content-end align-items-center">
+            <div class="user-function" class="flex align-items-center">
+              <div class="user_login">
+                <input type="checkbox" id="user_up">
+                <label for="user_up" class="d-flex flex-column align-items-center text-center" style="margin: 0 !important;">
+                  <img id="img_logo_user" class="rounded-circle" src="">
+                </label>
+                <div class="function">
+                  <div class="name">
+                    <b style="font-size: 1.1rem;">Thomas Shelby</b>
+                    <p>Nirvana</p>
+                  </div>
+                  <ul id="user_down">
+                    <li><i class="fas fa-user-edit"></i><a href="">Edit Profile</a></li>
+                    <li><i class="fab fa-cc-paypal"></i><a href="">Credit Card</a></li>
+                    <li><i class="fas fa-question-circle"></i><a href="">Help</a></li>
+                    <li id="log_out_btn" onclick="window.location = `/html/index.html`"><i class="fas fa-sign-out-alt"></i><a href="###">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header -->
+      <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+        style="min-height: 600px; background-size: cover; background-position: center top;">
+        <!-- Mask -->
+        <span class="mask bg-gradient-default opacity-8"></span>
+        <!-- Header container -->
+        <div class="container-fluid d-flex align-items-center">
+          <div class="row">
+            <div class="col-lg-7 col-md-10">
+              <h1 id="hello_name" class="display-2 text-white">Hello Kurt</h1>
+              <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your
+                work and manage your projects or assigned tasks</p>
+              <a href="#!" id="edit_profile_btn" class="btn btn-info">Edit profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="info_middle container-fluid mt--7">
+        <div class="row"></div>
+      </div>
+    </div>
+    <footer class="col-md-12">
+      <div class="container col-md-11 flex align-items-center">
+        <div class="footer_payment">
+          <img src="../Images/payment_230x.jpg" alt="" />
+        </div>
+        <span>©Dirtylesc 2022. Backdoor Time..</span>
+        <div class="contact_list flex align-items-center">
+          <a href=""><i class="fab fa-pinterest-p"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="../js/user_info.js"></script>
+<script type="module" src="../js/module-show-info.js"></script>
+
+</html>

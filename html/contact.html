@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style_2.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <div class="row">
+        <div class="head col-md-12 container-fluid position-fixed">
+          <div class="bar d-flex">
+            <div class="bar_smaller">
+              <i class="fas fa-bars" id="bar_smaller_icon"></i>
+            </div>
+            <div
+              class="bar_logo flex-grow-1 justify-content-lg-start align-content-center"
+            >
+              <a href="index.html" class=""><img src="../Images/logo_2.jpg" alt="" /></a>
+            </div>
+            <div
+              class="bar_list flex-grow-2 justify-content-center align-items-center"
+            >
+              <ul class="main_ul align-items-center">
+                <li>
+                  <a href="index.html">Home</i></a>
+                </li>
+                <li class="position-relative">
+                  <a href="">Pages<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="discography.html">Discography</a></li>
+                      <li><a href="about_us.html">About Us</a></li>
+                      <li><a href="">Find a store</a></li>
+                      <li><a href="">FAQ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="position-relative">
+                  <a href="">Shop<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="discography.html">Discography</a></li>
+                      <li><a href="">About the Band</a></li>
+                      <li><a href="">About me</a></li>
+                      <li><a href="about_us.html">About Us</a></li>
+                      <li><a href="">Find a store</a></li>
+                      <li><a href="">FAQ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="position-relative">
+                  <a href="">Blog<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="blog.html">Blog Grid</a></li>
+                      <li><a href="">Blog List</a></li>
+                      <li><a href="">Blog Details</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div
+              class="bar_function flex-grow-1 justify-content-end align-items-center"
+            >
+              <button type="submit">
+                <a class="f_search position-relative">
+                  <i class="fas fa-search" id="icon_search"></i>
+                  <span class="position-absolute">Search</span>
+                  <div class="search">
+                    <input style="display: block" type="text" placeholder=" " />
+                    <label for="name fs14">Search</label>
+                    <div class="products" id="products"></div>
+                  </div>
+                </a>
+              </button>
+              <a class="f_wish position-relative">
+                <i class="fas fa-heart"></i>
+                <span class="position-absolute">Wishlist</span>
+              </a>
+              <a class="f_cart position-relative">
+                <i class="fas fa-shopping-bag" id="cart_icon"></i>
+                <span class="position-absolute">Cart</span>
+              </a>
+              <div class="cart_menu position-fixed flex">
+                <div class="cart_nothing" id="cart_nothing"></div>
+                <div class="cart_content" id="cart_content">
+                  <h3 class="shopping_cart">Shopping Cart</h3>
+                  <div class="cart_products"></div>
+                  <div class="cart_func position-relative">
+                    <div class="subtotal flex align-items-center justify-content-between">
+                      <span style="color: black;">Subtotal</span>
+                      <input type="text" value="$0" disabled>
+                    </div>
+                    <div class="quick_add flex flex-column align-items-center justify-content-center">
+                      <a href="" class="quick_add_text flex align-items-center justify-content-center"
+                        >Check Out</a
+                      >
+                      <a href="" class="view_cart">View Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bar_smaller_function position-fixed col-md-12 text-black-50"
+          id="bar_smaller_function"
+        >
+          <div
+            class="menu_bar flex col-md-5 text-black-50 overflow-hidden"
+            id="menu_bar"
+            style="
+              opacity: 1;
+              background-color: white;
+              height: 100%;
+              --tw-text-opacity: 1;
+            "
+          >
+            <div class="menu_bar_content" id="menu_bar_content">
+              <ul>
+                <li>
+                  <a href=""><span>Home</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Pages</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Shop</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Blog</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Contact</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="linked_link col-md-12">
+          <div class="container col-md-10 mr-auto ml-auto">
+            <h1 class="text-align-center font-weight-normal">Contact</h1>
+            <div
+              class="link_items flex align-items-center mr-auto ml-auto justify-content-center"
+            >
+              <a href="">Home</a>
+              <i class="fas fa-angle-right"></i>
+              <span>Contact</span>
+            </div>
+          </div>
+        </div>
+        <div class="maps">
+            <div class="container col-md-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.738810452336!2d108.25104871477664!3d15.975010588939227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sVietnam%20-%20Korea%20University%20of%20Information%20and%20Communication%20Technology.!5e0!3m2!1sen!2s!4v1653318557680!5m2!1sen!2s" width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contact_function">
+            <div class="container col-md-10 flex justify-content-between">
+                <div class="contact_function_left">
+                    <h3>We would love to hear from you.</h3>
+                    <p>If you’ve got great products your making or looking to work with us then drop us a line.</p>
+                    <div class="contact_thanks">
+                      <img src="../Images/smile-svgrepo-com.svg" class="filter-green">
+                      <span>Thanks for contacting us. We'll get back to you as soon as possible.</span>
+                    </div>
+                    <div class="contact_error">
+                      <img src="../Images/sad-face-svgrepo-com (1).svg" class="filter-red">
+                      <span>Error Message! Please fill all field.</span>
+                    </div>
+                    <form action="app.js">
+                        <div class="name_email flex justify-content-between">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="text_area">
+                            <textarea name="message" id="message" cols="30" rows="9" placeholder="Message"></textarea>
+                        </div>
+                        <div class="receive_notic flex align-items-center">
+                            <input type="checkbox" name="notic" id="notic">
+                            <label for="notic">Save my name, email, and website in this browser for the next time I comment.</label>
+                        </div>
+                    </form>
+                    <button>Submit Now</button>
+                </div>
+                <div class="contact_function_right">
+                    <div class="address">
+                        <h5>Address</h5>
+                        <p>470 Đường Trần Đại Nghĩa, Hoà Hải, Ngũ Hành Sơn, Đà Nẵng 550000, Vietnam</p>
+                    </div>
+                    <div class="information">
+                        <h5>Information</h5>
+                        <span>+84788641673</span>
+                        <p>sypx.21it@vku.udn.vn</p>
+                    </div>
+                    <div class="social_media">
+                        <h5>Social Media</h5>
+                        <div class="contact_list flex align-items-center">
+                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <h5>We're Open</h5>
+                        <span>Our store has re-opened for shopping, exchanges</span>
+                        <p>Every day 8am to 6pm <small style="font-size: 10px;">(maybe..)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col-md-12">
+            <div class="container col-md-11 flex align-items-center">
+                <div class="footer_payment">
+                    <img src="../Images/payment_230x.jpg" alt="">
+                </div>
+                <span>©Dirtylesc 2022. Backdoor Time..</span>
+                <div class="contact_list flex align-items-center">
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="../js/contact.js"></script>
+</html>

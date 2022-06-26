@@ -1,0 +1,144 @@
+/*
+ Tạo hiệu ứng bằng animation trong CSS:
+ - Animation được hiểu là hiệu ứng chuyển động, sử dụng để tạo hiệu ứng di chuyển cho các phần tử
+ - Để tạo hiệu ứng bằng animation, cần phải có keyframe. Mỗi keyframe sẽ được chạy ở 1 thời điểm xác định
+ - Trong mỗi keyframe sẽ quy định phần tử đó dịch chuyển ra sao
+--------------------------------------
+Các thuộc tính đi kèm của Animation:
+- animation-name
+- animation-duration
+- animation-delay
+-----------------------------------------
+- animation-iteration-count: sử dụng để thiết lập số lần thực hiện một animation. Giá trị thường là:
++ Một số lần nhất định (số nguyên cụ thể);
++ infinite: animation lặp lại liên tục và vô hạn;
+-----------------------------------------
+- animation-direction: dùng để xác định chiều chạy của animation. Các giá trị có thẻ nhận là:
++ normal: animation di chuyển bình thường tiến về phía trước (mặc định);
++ reverse: animation di chuyển theo hướng ngược lại, lui về sau;
++ alternate: ainimation di chuyển tiến về phía trước, sau đó lui theo hướng ngược lại;
++ alternate-reverse: animation di chuyển ngược lại trước, rồi đổi chiều tiến về trước;
+----------------------------------------
+- animation-timing-function: dùng để xác định tốc độ thay đổi khi hiệu ứng di chuyển
+* Các giá trị có sẵn như sau:
++ ease: tạo hiệu ứng chuyển đổi khi bắt đầu thì chậm, sau đó nhanh dần và gần kết thúc
+lại chậm dần (Giá trị mặc định)
++ linear: tạo hiệu ứng chuyển đổi từ lúc bắt đầu đến lúc kết thúc tốc độ là như nhau;
++ ease-in: tạo hiệu ứng chuyển đổi chậm lúc bắt đầu;
++ ease-out: tạo hiệu ứng chuyển đổi chậm lúc kết thúc;
++ ease-in-out: tạo hiệu ứng chuyển đổi chậm cả lúc bắt đầu và kết thúc;
++ cubic-bezier(n,n,n,n): cho phép bạn xác định một giá trị của riêng mình theo hàm bezier;
+----------------------------------------
+- animation-fill-mode: sử dụng để thay đổi trạng thái của phần tử trước khi bắt đầu và sau khi kết thúc animation;
+* Các giá trị có sẵn như sau:
++ none: khi animation không hoạt động thì nó sẽ giữ nguyên trạng thái bất động của phần tử, không thêm một style nào
+vào thành phần (mặc đinh)
++ forwards: khi animation không hoạt động sau khi kết thúc animation, giá trị này sẽ apply các thuộc tính của lần
+cuối cùng xuất hiện trong keyframe vào trạng thái của phần tử (phụ thuộc vào animation-direction và animation iteration-count)
++ backwards: khi animation không hoạt động trước khi bắt đầu animation (trong thời gian delay), giá trị này sẽ apply các thuộc tính
+xuất hiện đầu tiên trong keyframe vào trạng thái của phần tử (phụ thuộc vào thuộc tính animation-direction)
++ both: kết hợp cả forwards và backwards cho trạng thái phần tử (bắt đầu là giá trị from, kết thúc là giá trị to)
+----------------------------------------
+Gộp chung các thuộc tính:
+animate: name | duration | timing-function | delay | iteration-count | direction | fill-mode
+
+* Ví dụ gộp thuộc tính:
+div { animation: example 5s linear 2s infiniti alternate; }
+----------------------------------------
+Cú pháp keyframe
+@keyframes Name {
+	(code)
+}
+
+- Name: tên của animation bạn muốn tạo; (Đặt tên sao cũng được, nhưng khi gọi phải gọi đúng tên đã đặt)
+- code: các đoạn code quy định tiến trình chuyển động. Có 2 dạng:
++ Sử dụng phần trăm: từ 0 đến 100%;
++ from...to: xác định giá trị từ khởi đầu(from: tương đương với 0%) đến kết thúc (to: tương đương với 100%);
+
+--> Để chuyển động xảy ra phải kết nối keyframes với phần tử
+----------------------------
+Trang web hỗ trợ làm phần Animate: https://animate.style/ ;
+----------------------------
+Các bước để viết hiệu ứng keyframe:
+1. Xác định hiệu ứng cần viết (Tưởng tượng hoặc bị yêu cầu)
+2. Xác định các thuộc tính đã sử dụng và kịch bản
+3. Code trong keyframe
+*/
+/*Reset CSS - Begin*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	outline: none;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+ul, ol{
+	list-style: none;
+}
+
+/*Reset CSS - End*/
+
+
+/*Định nghĩa hiệu ứng*/
+/*@keyframes ChangeColor {
+ from {
+ 	background-color: green;
+ 	}
+ to {
+ background-color: red;
+	}
+}*/
+
+@keyframes ChangeColorPercent {
+	 0%{
+	 	background-color: green;
+	 	font-size: 20px;
+	 	color: black;
+	 	transform: rotate(10deg);
+	 	}
+
+	 25%{
+	 	background-color: hotpink;
+	 	font-size: 10px;
+	 	color: red;
+	 	transform: scale(100px);
+		}
+
+	 75%{
+	 	background-color: khaki;
+	 	font-size: 15px;
+	 	color: yellow;
+	 	transform: skewX(30deg);
+		}
+
+	 100%{
+	 	background-color: red;
+	 	font-size: 50px;
+	 	color: white;
+	 	transform: translateY(100px);
+		}
+}
+
+.block {
+	width: 400px;
+	height: 400px;
+	border: 1px solid green;
+	margin: 30px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	background-color: blueviolet;
+	color: #fff;
+	font-weight: bold;
+	animation-name: ChangeColorPercent;
+	animation-duration: 4s;
+	/*animation-delay: 2s;*/
+	animation-iteration-count: 2;
+	animation-direction: normal;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+	/*animation: ChangeColor 4s ease 2s 2 normal both;*/
+}

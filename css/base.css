@@ -1,0 +1,224 @@
+/*Playfair Display*/
+
+@font-face {
+	font-family: "PlayfairDisplay Black";
+	src:  url('../fonts/PlayfairDisplay-Black.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay BlackItalic";
+	src:  url('../fonts/PlayfairDisplay-BlackItalic.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay Bold";
+	src:  url('../fonts/PlayfairDisplay-Bold.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay BoldItalic";
+	src:  url('../fonts/PlayfairDisplay-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay ExtraBold";
+	src:  url('../fonts/PlayfairDisplay-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay ExtraBoldItalic";
+	src:  url('../fonts/PlayfairDisplay-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay Italic";
+	src:  url('../fonts/PlayfairDisplay-Italic.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay Medium";
+	src:  url('../fonts/PlayfairDisplay-Medium.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay MediumItalic";
+	src:  url('../fonts/PlayfairDisplay-MediumItalic.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay Regular";
+	src:  url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay SemiBold";
+	src:  url('../fonts/PlayfairDisplay-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: "PlayfairDisplay SemiBoldItalic";
+	src:  url('../fonts/PlayfairDisplay-SemiBoldItalic.ttf');
+}
+
+/*Roboto*/
+
+@font-face {
+	font-family: "Roboto Black";
+	src:  url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: "Roboto BlackItalic";
+	src:  url('../fonts/Roboto-BlackItalic.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Bold";
+	src:  url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: "Roboto BoldItalic";
+	src:  url('../fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Italic";
+	src:  url('../fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src:  url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: "Roboto LightItalic";
+	src:  url('../fonts/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+	font-family: "Roboto Medium";
+	src:  url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+	font-family: "Roboto MediumItalic";
+	src:  url('../fonts/Roboto-MediumItalic.ttf');
+}
+@font-face {
+	font-family: "Roboto Regular";
+	src:  url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: "Roboto Thin";
+	src:  url('../fonts/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: "Roboto ThinItalic";
+	src:  url('../fonts/Roboto-ThinItalic.ttf');
+}
+
+/* Base style*/
+html{
+    font-size: 11px;
+}
+
+body{
+    font-family:"Roboto Regular",sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--heading-color);
+    margin: 10px 0;
+}
+
+h1{
+    font-size: 1.85rem;
+}
+
+h2{
+    font-size: 1.71rem;
+}
+
+h3{
+    font-size: 1.57rem;
+}
+
+h4{
+    font-size: 1.4rem;
+}
+
+h5{
+    font-size: 1.28rem;
+}
+
+h6{
+    font-size: 1.14rem;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+ul,li{
+	list-style: none;
+}
+
+image{
+	max-width: 100%;
+	height: auto;
+}
+
+.btn {
+	padding:13px 30px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-large {
+	padding: 12px 40px;
+	font-size: 1.1rem;
+}
+
+.section_box {
+	padding: 40px 0;
+}
+
+.section_title {
+	color: #121212;
+	font-family: "Playfair Display", sans-serif;
+	font-size: 3.2rem;
+	line-height: 3.53;
+	padding-top: 15px;
+	margin-bottom: 0px;
+}
+
+.section_subTitle {
+	font-size: 14px;
+	color: #121212;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+
+.item--title{
+	font-size: 17px;
+}
+
+

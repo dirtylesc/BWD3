@@ -1,0 +1,581 @@
+input {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.linked_link {
+  margin-top: 5.5rem;
+}
+
+.linked_link h2 {
+  font-size: 45px;
+  margin-bottom: 0.75rem;
+}
+
+.link_items a,
+.link_items span {
+  font-size: 17px;
+}
+
+.template {
+  margin-top: 5rem;
+}
+
+.template .template_left {
+  width: 20%;
+}
+
+.template .template_right {
+  width: 80%;
+}
+
+.slider_fill{
+  margin-bottom: 2rem;
+}
+
+.slider_fill span{
+  max-width: max-content;
+  padding: 0 15px;
+}
+
+.slider_fill .column{
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 5rem;
+}
+
+.slider_fill .column i{
+  display: flex;
+  align-items: center;
+  padding: .7rem;
+  background-color: #f2f2f2;
+  margin-right: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .25s all;
+}
+
+.slider_fill .column i.ppp,
+.slider_fill .column i:hover{
+  background-color: #ebbdb7;
+  color: white;
+}
+
+.list_filter label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: max-content;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.list_filter label i {
+  text-align: right;
+  padding-top: 0.1rem;
+  margin-right: 1rem;
+  transition: 0.25s all;
+  max-width: max-content;
+  overflow: hidden;
+}
+
+.list_filter input:checked + label i {
+  transform: rotate(180deg);
+}
+
+.list_filter .list {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.15s all;
+  transform: translateY(-5%);
+  max-height: 0;
+  overflow: hidden;
+}
+
+.list.holdDown {
+  opacity: 1;
+  max-height: 100%;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.list_filter .list ul {
+  max-height: 100%;
+}
+
+.list_filter ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.list_filter .collections{
+  padding: 0.75rem 0;
+}
+
+.list.holdDown ul li a {
+  position: relative;
+}
+
+.list.brand ul li a::after,
+.list.collection ul li a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #181c42;
+  width: 100%;
+  bottom: -0.3rem;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+.list.brand ul li a:hover::after,
+.list.collection ul li a:hover::after {
+  transform: scaleX(1);
+}
+.list.brand ul li a.ppp::after{
+  transform: scaleX(1);
+}
+.list.brand ul li a::after,
+.list.tag ul li a::after,
+.list.collection ul li a::after {
+  transform-origin: 0% 50%;
+}
+
+.collections .collection_img {
+  width: 27%;
+}
+
+.list ul li a span {
+  min-width: max-content;
+  font-size: 1.1rem;
+  color: #666666;
+  transition: 0.2s all;
+}
+
+.list ul li a:hover span {
+  color: black;
+}
+
+.ppp::after{
+  transform: scaleX(1) !important;
+}
+
+.collections ul li img {
+  width: 50px;
+}
+
+.list ul li {
+  padding: 0.25rem 0;
+}
+
+.brands ul li, .tags ul li,
+.brands ul li a, .tags ul li a{
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.tags ul li{
+  margin: 0.3rem;
+  padding: 0;
+}
+
+.tags ul li a{
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: .3rem .6rem;
+  margin: 0.1rem;
+  margin-left: 0;
+}
+
+.tags ul li a:hover{
+  background-color: #ebbdb7;
+  border: 1px solid #ebbdb7;
+}
+
+.tags ul li a:hover span{
+  color: white;
+}
+
+.add_wishlist {
+  min-width: 45px;
+  max-width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #181c42;
+  cursor: pointer;
+  font-size: 20px;
+  color: #181c42;
+  padding-top: 2px;
+  text-align: center;
+}
+.cs-hidden.c100 .quick_add{
+  max-width: max-content;
+}
+.cs-hidden .quick_add a{
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+  border-radius: 1.5rem;
+}
+.cs-hidden.c100 .quick_add a:hover{
+  background-color: #ebbdb7;
+  color: black;
+  box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, .5);
+}
+.cs-hidden.c100 .quick_add a{
+  background-color: #181c42;
+  color: white;
+  padding: .8rem 2.75rem;
+  transition: all 0.3s ease;
+}
+.cs-hidden.c20 .quick_add a{
+  right: 50%;
+  bottom: -5.25rem;
+  transform: translateY(-5%);
+  background-color: white;
+  color: black;
+  padding: .6rem 1.75rem;
+  transition: .3 ease-in-out;
+}
+
+.cs-hidden.c20 .quick_add a:hover{
+  transform: translateY(0);
+  background-color: #ebbdb7;
+  color: white;
+  box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, .5);
+}
+
+.cs-hidden .add_wishlist span {
+  min-width: max-content;
+  background-color: #181c42;
+  color: white;
+  visibility: hidden;
+  transition: 0.1s all;
+  border-radius: 8px;
+}
+
+.cs-hidden.c20 .add_wishlist span{
+  font-size: 13px;
+  right: 3.2rem;
+  padding: 5px 10px;
+  transform: translateX(-5px);
+}
+
+.cs-hidden.c100 .add_wishlist span{
+  font-size: 13px;
+  padding: 6px 12px;
+  top: 3.7rem;
+  transform: translateY(5px);
+}
+
+.cs-hidden .add_wishlist span::after {
+  content: "";
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  background-color: #181c42;
+}
+
+.cs-hidden.c20 .add_wishlist span::after{
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.cs-hidden.c100 .add_wishlist span::after{
+  top: -3px;
+  transform: rotate(45deg);
+  right: 43%;
+}
+
+.cs-hidden.c20 .add_wishlist:hover {
+  background-color: #181c42;
+  color: white;
+  outline: 3px solid #ebbdb7;
+}
+
+.cs-hidden .add_wishlist i{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-hidden .add_wishlist i:hover + span {
+  visibility: visible;
+  transform: translateX(0);
+  opacity: 1;
+}
+.slider {
+  margin: .5rem 0;
+}
+
+.slider .left:hover,
+.slider .right:hover {
+  background-color: #181c42;
+  color: white;
+  outline: 3px solid #ebbdb7;
+}
+
+.cs-hidden li {
+  list-style-type: none;
+  position: relative;
+  padding: 1rem;
+}
+
+.cs-hidden.c20 li{
+  max-width: 20%;
+}
+
+.cs-hidden.c100 li{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-hidden.c20 li p{
+  display: none;
+}
+
+.cs-hidden.c100 li a {
+  width: 25%;
+}
+
+.cs-hidden.c20 li img {
+  width: 100%;
+}
+
+.cs-hidden.c100 li .item_contents,
+.cs-hidden.c100 li .item_contents p{
+  margin: 1.5rem 0;
+}
+
+.carousel-inner .cs-hidden.c100 .item_icons{
+  visibility: visible;
+  position: relative !important;
+  opacity: 1;
+}
+
+.carousel-inner .cs-hidden.c100 .item_icons .quick_add a{
+  position: relative !important;
+}
+
+.cs-hidden.c100 li .item_contents p{
+  color: #666666;
+}
+
+.cs-hidden.c100 li .item_contents{
+  width: 70%;
+}
+
+.carousel-inner .cs-hidden.c20 .item_icons {
+  right: 1.7rem;
+  top: 1.1rem;
+  max-width: max-content;
+  transform: translateX(3.1rem);
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.carousel-inner .cs-hidden li:hover > .item_contents .item_icons {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel-inner .cs-hidden.c100 .item_icons{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+.carousel-inner .cs-hidden.c100 .add_wishlist{
+  margin-left: 1rem;
+  font-size: 19px;
+}
+
+.carousel-inner .item_icons .add_wishlist {
+  background-color: white;
+  color: black;
+  border: 0;
+  font-size: 14px;
+}
+
+.carousel-inner .cs-hidden.c20 .item_icons .add_wishlist {
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.carousel-inner .item_icons .add_wishlist:hover {
+  background-color: #181c42;
+  color: white;
+  outline: 3px solid #ebbdb7;
+}
+
+.carousel-inner .item_contents {
+  padding: 10px 15px 15px 0;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #b3766e;
+}
+
+.carousel-inner .item_contents h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.carousel-inner .item_contents h3 a {
+  font-size: 17px;
+  color: var(--product-title-color, #000);
+  font-weight: normal;
+}
+
+.slider_fill .fill div.fill_filter{
+  display: none;
+}
+.slider_fill .fill i,
+.slider_fill .fill div{
+  max-width: max-content;
+}
+.filter h2 i{
+  display: none;
+}
+
+@media only screen and (max-width: 64em) {
+  .template .container{
+    margin: 0;
+  }
+  .template .template_left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .template .template_left .filter{
+    transform: translateX(-100%);
+    transition: 0.3s all;
+    visibility: hidden;
+    opacity: 0;
+    width: 35%;
+    overflow: scroll;
+    background-color: white;
+    padding: 2rem;
+    height: 100%;
+    position: fixed;
+  }
+  .template .template_left.hold_right{
+    visibility: visible;
+    opacity: 1;
+  }
+  .template .template_left.hold_right .filter{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .cs-hidden.c100 li a{
+    width: 33%;
+  }
+  .cs-hidden.c100 li .item_contents{
+    width: 62%;
+  }
+  .cs-hidden.c20 li{
+    max-width: 33%;
+  }
+  .cs-hidden.c100 .quick_add a{
+    padding: .5rem 1.75rem;
+  }
+  .carousel-inner .item_contents h3{
+    margin-bottom: .5rem;
+  }
+  .carousel-inner .item_contents h3 a{
+    font-size: 1.4rem;
+  }
+  .carousel-inner .item_contents span{
+    font-size: 1.1rem;
+  }
+  .template .template_right{
+    width: 100%;
+  }
+  .slider_fill .fill div.fill_order{
+    margin-left: 1rem;
+  }
+  .slider_fill .fill div.fill_filter{
+    display: flex;
+    cursor: pointer;
+  }
+  .filter h2 i{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .head{
+    padding: 1rem;
+  }
+  .head .bar_function{
+    width: 25%;
+  }
+  .log_function .container{
+    width: 50%;
+  }
+  .template .template_left .filter{
+    width: 40%;
+  }
+  .list ul li a span{
+    font-size: .9rem;
+  }
+  .collections ul li img{
+    width: 40px;
+  }
+  .cs-hidden.c100 li a{
+    width: 40%;
+  }
+  .carousel-inner .cs-hidden.c100 .add_wishlist{
+    margin-left: .7rem;
+    font-size: 17px;
+  }
+  .cs-hidden.c100 li .item_contents{
+    width: 55%;
+  }
+  .cs-hidden.c100 li .item_contents, .cs-hidden.c100 li .item_contents p{
+    margin: .7rem 0;
+  }
+  .cs-hidden.c100 li .item_contents{
+    padding-top: 0;
+  }
+  .carousel-inner .item_contents h3{
+    max-height: max-content;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  .log_function .container{
+    width: 60%;
+    padding: 5rem;
+  }
+  .cs-hidden.c20 li{
+    max-width: 49.5%;
+  }
+}

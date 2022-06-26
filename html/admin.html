@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style_2.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <title>Admin - DirtyLesc</title>
+</head>
+<body>
+    <div class="root">
+        <div class="row">
+            <div class="head col-md-12 container-fluid position-fixed">
+                <div class="bar d-flex">
+                  <div class="bar_smaller">
+                    <i class="fas fa-bars" id="bar_smaller_icon"></i>
+                  </div>
+                  <div
+                    class="bar_logo flex-grow-1 justify-content-lg-start align-content-center"
+                  >
+                    <a href="index.html" class=""><img src="../Images/logo_2.jpg" alt="" /></a>
+                  </div>
+                  <div
+                    class="bar_list flex-grow-2 justify-content-center align-items-center"
+                  >
+                    <ul class="main_ul align-items-center">
+                      <li>
+                        <a href="index.html">Home</i></a>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Pages<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="discography.html">Discography</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="">Find a store</a></li>
+                            <li><a href="">FAQ</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Shop<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="discography.html">Discography</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="">Find a store</a></li>
+                            <li><a href="">FAQ</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Blog<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="">Blog Grid</a></li>
+                            <li><a href="">Blog List</a></li>
+                            <li><a href="">Blog Details</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div
+                    class="bar_function flex-grow-1 justify-content-end align-items-center"
+                  >
+                  </div>
+                </div>
+            </div>
+            <div class="template col-md-12">
+              <div class="container flex col-md-12 justify-content-between">
+                <div class="template_left_">  
+                  <ul>
+                    <li><a href="###"><span>Product</span></a></li>
+                    <li><a href="###"><span>Statistics</span></a></li>
+                  </ul>
+                </div>
+                <div class="template_right_">
+                </div>
+              </div>
+            </div>
+            <div class="add_edit_product col-md-12">
+              <div id="nothing_add" class="nothing"></div>
+              <div class="add_edit col-md-12 flex align-items-center">
+                <div class="container">
+                  <h4>Add Product</h4>
+                  <form onsubmit="addNewProduct()" class="flex form_add">
+                    <div class="add_edit_left" style="border-right: 1px solid #dedede; padding-right: 1rem">
+                      <div class="img_uploaded"></div>
+                      <input type="file" id="upload_img">
+                    </div>
+                    <div class="add_edit_right">
+                      <table>
+                      </table>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="../js/admin.js"></script>
+</html>

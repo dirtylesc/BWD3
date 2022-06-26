@@ -1,0 +1,114 @@
+.linked_link{
+    margin-top: 6rem;
+}
+
+.maps{
+    margin-top: 5rem;
+}
+
+.contact_function{
+    margin-top: 4.5rem;
+}
+
+.contact_function .contact_function_left{
+    width: 60%;
+}
+
+.contact_function .contact_function_right{
+    width: 33%;
+}
+
+#name, #email{
+    width: 49%;
+    height: 2.6rem;
+    position: relative;
+}
+
+#message{
+    padding-top: 0.5rem;
+}
+
+.text_area{
+    margin-top: 1.2rem;
+}
+
+#message, #name, #email{
+    outline: none;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    padding-left: .8rem;
+}
+
+.receive_notic input{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.receive_notic label{
+    padding-top: .46rem;
+    margin-left: .7rem;
+}
+
+.contact_function_left .contact_thanks,
+.contact_function_left .contact_error{
+    margin-top: 2.25rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    padding: .75rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.contact_function_left .contact_error{
+    color: #FF1B1B;
+    background-color: rgb(255, 197, 197);
+}
+.contact_function_left .contact_thanks{
+    color: #3a8735;
+    background-color: #eaf7e6;
+}
+
+.contact_function_left .contact_thanks .filter-green{
+    width: 3%;
+    filter: invert(41%) sepia(84%) saturate(382%) hue-rotate(68deg) brightness(90%) contrast(86%);
+}
+
+.contact_function_left .contact_error .filter-red{
+    width: 3%;
+    filter: invert(30%) sepia(76%) saturate(4887%) hue-rotate(349deg) brightness(98%) contrast(105%);
+}
+
+.contact_function_left span{
+    padding-left: .75rem;
+}
+
+.contact_function_left button{
+    outline: none;
+    border: 1px solid #181c42;
+    background-color: #181c42;
+    color: white;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 14px;
+    margin-top: 1.1rem;
+}
+
+.contact_function_right h5{
+    margin-bottom: 1.2rem;
+    font-size: 18px;
+}
+
+.contact_function_right p{
+    margin-bottom: 2.1rem;
+}
+
+.social_media{
+    margin-bottom: 2.3rem;
+    width: 42%;
+}
+
+.social_media i{
+    color: black;
+}

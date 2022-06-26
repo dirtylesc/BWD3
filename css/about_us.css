@@ -1,0 +1,216 @@
+.linked_link {
+    margin-top: 7rem;
+}
+
+.linked_link h1{
+    font-size: 36px;
+    color: #181c42;
+}
+
+.about_us_main{
+    margin-top: 5.5rem;
+}
+.about_us_main .main_text{
+    width: 70%;
+    margin-top: 4rem;
+}
+
+.about_us_main .image_main{
+    overflow: hidden;
+}
+
+.about_us_main img{
+    width: 100%;
+    transition: .45s all;
+}
+
+.about_us_main img:hover{
+    transform: scale(1.05);
+}
+
+.about_us_main h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    color: #181c42;
+    line-height: 3.3rem;
+}
+
+.about_us_main strong{
+    font-weight: 400;
+    margin: 0.75rem 0;
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+.about_us_main p{
+    color: #666666;
+    margin: 1.25rem 0;
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+.template{
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.template .template_left,
+.template .template_right{
+    width: 50%;
+    padding: 0;
+}
+
+.template .template_right{
+    padding: 2.8rem 0 0 7rem ;
+}
+
+.template .template_right h1{ 
+    text-align: left;
+    color: #181c42;
+    font-size: 45px;
+    line-height: 3.5rem;
+}
+
+.template .template_right .template_icons{
+    margin-top: 2.5rem;
+}
+
+.template .template_right .template_icons .icon{
+    padding-bottom: 1rem;
+}
+
+.template .template_right embed{
+    width: 15%;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.our_temp {
+    margin-top: 6rem;
+}
+
+.our_temp ul{
+    margin-top: 5rem;
+}
+
+.our_temp ul li{
+    list-style-type: none;
+    width: 31.4%;
+    overflow: hidden;
+}
+
+.our_temp ul li .our_temp_logo{
+    overflow: hidden;
+    height: 83%;
+}
+
+.our_temp ul li img{
+    width: 100%;
+    height: 100%;
+    transition: .45s all;
+}
+
+.our_temp ul li p{
+    font-weight: 500;
+    padding-top: 1.5rem;
+    font-size: 18px;
+    margin-bottom: .1rem;
+}
+
+.our_temp ul li img:hover{
+    transform: scale(1.05);
+}
+
+.ship_payment{
+    margin-top: 5rem;
+    border-top: 1px solid #dedede;
+    padding: 2rem;
+}
+
+.ship_payment ul li{
+    list-style-type: none;
+    width: 24%;
+    display: flex;
+    align-items: center;
+}
+
+.ship_payment ul li img{
+    width: 17%;
+    height: fit-content;
+}
+
+.ship_payment ul li .ship_payment_text{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.ship_payment ul li .ship_payment_text strong{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.ship_payment ul li .ship_payment_text p{
+    color: #666666;
+}
+
+@media only screen and (max-width: 64em){
+    .linked_link{
+        margin-top: 5rem;
+    }
+    .about_us_main{
+        margin-top: 3.5rem;
+    }
+    .about_us_main .main_text{
+        width: 85%;
+    }
+    .template .container{
+        display: block !important;
+    }
+    .template{
+        margin-top: 5rem;
+    }
+    .template .template_right,
+    .template .template_left{
+        width: 100%;
+    }
+    .template .template_right{
+        padding: 4rem;
+        padding-bottom: 0;
+    }
+    .template .template_right .template_icons{
+        margin-top: 2.5rem;
+    }
+    
+    .template .template_right .template_icons .icon{
+        padding-bottom: 1rem;
+        font-size: 11px;
+    }
+
+    .about_us_main strong{
+        font-size: 21px;
+    }
+
+    .about_us_main p{
+        margin: 0.75rem 0;
+        font-size: 17px;
+    }  
+    
+    .template .template_right embed{
+        width: 7.5%;
+        margin-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .ship_payment{
+        margin-top: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 48em){
+  .ship_payment ul li{
+      width: 48%;
+  }
+  footer{
+      margin-top: 0;
+  }
+}

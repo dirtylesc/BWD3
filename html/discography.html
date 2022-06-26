@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style_2.css" />
+    <link rel="stylesheet" href="../css/discography.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <title>Discography - DirtyLesc</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="row">
+        <div class="head col-md-12 container-fluid position-fixed">
+          <div class="bar d-flex">
+            <div class="bar_smaller">
+              <i class="fas fa-bars" id="bar_smaller_icon"></i>
+            </div>
+            <div
+              class="bar_logo flex-grow-1 justify-content-lg-start align-content-center"
+            >
+              <a href="index.html" class=""><img src="../Images/logo_2.jpg" alt="" /></a>
+            </div>
+            <div
+              class="bar_list flex-grow-2 justify-content-center align-items-center"
+            >
+              <ul class="main_ul align-items-center">
+                <li>
+                  <a href="index.html">Home</i></a>
+                </li>
+                <li class="position-relative">
+                  <a href="">Pages<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="discography.html">Discography</a></li>
+                      <li><a href="about_us.html">About Us</a></li>
+                      <li><a href="">Find a store</a></li>
+                      <li><a href="">FAQ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="position-relative">
+                  <a href="">Shop<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="discography.html">Discography</a></li>
+                      <li><a href="about_us.html">About Us</a></li>
+                      <li><a href="">Find a store</a></li>
+                      <li><a href="">FAQ</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="position-relative">
+                  <a href="">Blog<i class="fas fa-angle-down"></i></a>
+                  <div class="menu position-absolute">
+                    <ul>
+                      <li><a href="">Blog Grid</a></li>
+                      <li><a href="">Blog List</a></li>
+                      <li><a href="">Blog Details</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div
+              class="bar_function flex-grow-1 justify-content-end align-items-center"
+            >
+              <button type="submit">
+                <a class="f_search position-relative">
+                  <i class="fas fa-search" id="icon_search"></i>
+                  <span class="position-absolute">Search</span>
+                  <div class="search">
+                    <input style="display: block" type="text" placeholder=" " />
+                    <label for="name fs14">Search</label>
+                    <div class="products" id="products"></div>
+                  </div>
+                </a>
+              </button>
+              <a class="f_wish position-relative">
+                <i class="fas fa-heart"></i>
+                <span class="position-absolute">Wishlist</span>
+              </a>
+              <a class="f_cart position-relative">
+                <i class="fas fa-shopping-bag" id="cart_icon"></i>
+                <span class="position-absolute">Cart</span>
+              </a>
+              <div class="cart_menu position-fixed flex">
+                <div class="cart_nothing" id="cart_nothing"></div>
+                <div class="cart_content" id="cart_content">
+                  <h3 class="shopping_cart">Shopping Cart</h3>
+                  <div class="cart_products"></div>
+                  <div class="cart_func position-relative">
+                    <div class="subtotal flex align-items-center justify-content-between">
+                      <span style="color: black;">Subtotal</span>
+                      <input type="text" value="$0" disabled>
+                    </div>
+                    <div class="quick_add flex flex-column align-items-center justify-content-center">
+                      <a href="###" class="quick_add_text flex align-items-center justify-content-center"
+                        >Check Out</a
+                      >
+                      <a href="" class="view_cart">View Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="cursor: pointer;" class="log_in_temp">
+                <a href="###"><i>Sign In</i></a>
+              </div>
+              <div class="user-function" style="display: none;">
+                <div class="user_login">
+                    <input type="checkbox" id="user_up">
+                    <label for="user_up">
+                        <img src="../Images/user.jpg" alt=""/></label>
+                    <div class="function">
+                        <div class="name">
+                            <b style="font-size: 1.1rem;">Thomas Shelby</b>
+                            <p>Peaky Blinder</p>
+                        </div>
+                        <ul id="user_down">
+                            <li id="my_profile"></li>
+                            <li><i class="fas fa-user-edit"></i><a href="">Edit Profile</a></li>
+                            <li><i class="fab fa-cc-paypal"></i><a href="">Credit Card</a></li>
+                            <li><i class="fas fa-question-circle"></i><a href="">Help</a></li>
+                            <li id="log_out_btn"><i class="fas fa-sign-out-alt"></i><a href="###">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="log_function flex align-items-center">
+          <div class="nothing" id="nothing"></div>
+          <div class="container">
+              <div class="title">
+                  <div class="logo"><h2>DIRTYLESC</h2></div>
+                  <strong>Welcome to DirtyLesc</strong>
+                  <p>Access tons of novels and manga with a single login</p>
+              </div>
+              <h3 id="h3_log_in">Login Account</h3>
+              <h3 id="h3_sign_up" style="display: none;">Sign Up Account</h3>
+              <form action="">
+                  <ul id="ul_login">
+                      <li id="username_login"><span>Username</span> <input type="text"></li>
+                      <li id="password_login"><span>Password</span> <input type="password"></li>
+                      <li id="submit_1"><input type="submit" value="Submit"></li>
+                      <li id="dha"><a href="###">Don't have an account?</a></li>
+                      <li><a>OR</a></li>
+                      <li id="fa"><a href="###">Forget your password?</a></li>
+                  </ul>
+                  <ul id="ul_signup" style="display: none;">
+                      <li id="username_signup"><span>Username</span> <input type="text"></li>
+                      <li id="gmail"><span>Gmail</span> <input type="text"></li>
+                      <li id="password_signup"><span>Password</span> <input type="password"></li>
+                      <li id="re_password"><span>Re-Password</span> <input type="password"></li>
+                      <li id="submit_2"><input type="submit" value="Submit"></li>
+                      <li id="ha"><a href="###">Have an account?</a></li>
+                      <li><a>OR</a></li>
+                      <li id="fa"><a href="###">Forget your password?</a></li>
+                  </ul>
+              </form>
+              <div class="company_info">
+                  <ul>
+                      <li>© 2022 DirtyLess</li>
+                      <li><a href="">Terms of Service</a></li>
+                      <li><a href="">Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div
+          class="bar_smaller_function position-fixed col-md-12 text-black-50"
+          id="bar_smaller_function"
+        >
+          <div
+            class="menu_bar flex col-md-5 text-black-50 overflow-hidden"
+            id="menu_bar"
+            style="
+              opacity: 1;
+              background-color: white;
+              height: 100%;
+              --tw-text-opacity: 1;
+            "
+          >
+            <div class="menu_bar_content" id="menu_bar_content">
+              <ul>
+                <li>
+                  <a href=""><span>Home</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Pages</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Shop</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Blog</span></a
+                  ><span><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                  <a href=""><span>Contact</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="linked_link col-md-12" id="linked_link">
+          <div class="container col-md-10 mr-auto ml-auto">
+            <h1 class="text-align-center font-weight-normal">Jazz Music</h1>
+            <div
+              class="link_items flex align-items-center mr-auto ml-auto justify-content-center"
+            >
+              <a href="index.html">Home</a>
+              <i class="fas fa-angle-right"></i>
+              <span>Jazz Music</span>
+            </div>
+          </div>
+        </div>
+        <div class="template col-md-12" id="template">
+          <div
+            class="container col-md-11 flex justify-content-between mr-auto ml-auto"
+          >
+            <div class="template_left" id="template_left">
+              <div class="filter" id="filter_1">
+                <h2
+                  class="font-weight-normal flex align-items-center justify-content-between"
+                >
+                  Filters
+                  <i
+                    class="fas fa-times"
+                    style="
+                      font-size: 20px;
+                      max-width: max-content;
+                      margin-right: 1rem;
+                    "
+                  ></i>
+                </h2>
+                <div class="list_filter flex flex-column">
+                  <div class="collections">
+                    <input type="checkbox" id="collection" />
+                    <label for="collection"
+                      >Collections <i class="fas fa-angle-up"></i
+                    ></label>
+                    <div class="list collection holdDown">
+                      <ul class="flex flex-column">
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_1.jpg" alt="" />
+                            </div>
+                            <span>Rock Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_2.jpg" alt="" />
+                            </div>
+                            <span>Rap Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_3.jpg" alt="" />
+                            </div>
+                            <span>Folk Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_4.jpg" alt="" />
+                            </div>
+                            <span>Jazz Fusion</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###" class="ppp">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_4.jpg" alt="" />
+                            </div>
+                            <span>Jazz Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_3.jpg" alt="" />
+                            </div>
+                            <span>Latin Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_2.jpg" alt="" />
+                            </div>
+                            <span>Popular Music</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <div class="collection_img">
+                              <img src="../Images/collection_img_1.jpg" alt="" />
+                            </div>
+                            <span>Soul Music</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="brands">
+                    <input type="checkbox" id="brand" />
+                    <label for="brand"
+                      >Brands <i class="fas fa-angle-up"></i
+                    ></label>
+                    <div class="list brand holdDown">
+                      <ul class="flex flex-column">
+                        <li>
+                          <a class="ppp" href="###">
+                            <span>All</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <span>The Beatles</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <span>Nirvana</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>Thịnh Suy</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>Chillies</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <span>Ngọt Band</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="###">
+                            <span>Rock Music</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tags">
+                    <input type="checkbox" id="tag" />
+                    <label for="tag"
+                      >Tags <i class="fas fa-angle-up"></i
+                    ></label>
+                    <div class="list tag holdDown">
+                      <ul class="flex flex-wrap">
+                        <li>
+                          <a href="">
+                            <span>relax</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>jazz</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>rap</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>rock</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>pop</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span>lowkey</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="template_right">
+              <div class="slider" class="col-md-12">
+                <div class="container">
+                  <div class="slider_fill flex">
+                    <div class="fill flex align-items-center">
+                      <div
+                        class="fill_filter flex align-items-center"
+                        id="fill_filter"
+                      >
+                        <span>Filter</span>
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                      <div class="fill_order flex align-items-center">
+                        <span>Best selling</span>
+                        <i class="fas fa-angle-down"></i>
+                      </div>
+                    </div>
+                    <div class="column flex">
+                      <i class="fa fa-bars"></i>
+                      <i
+                        class="fa fa-bars ppp"
+                        style="transform: rotate(90deg)"
+                      ></i>
+                    </div>
+                  </div>
+                  <div
+                    id="carousel-simple"
+                    class="carousel multi-item-carousel slide col-md-offset-3 position-relative"
+                    data-ride="carousel"
+                  >
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <ul id="autoWidth" class="cs-hidden flex flex-wrap c20">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notification">
+        </div>
+        <footer class="col-md-12">
+          <div class="container col-md-11 flex align-items-center">
+            <div class="footer_payment">
+              <img src="../Images/payment_230x.jpg" alt="" />
+            </div>
+            <span>©Dirtylesc 2022. Backdoor Time..</span>
+            <div class="contact_list flex align-items-center">
+              <a href=""><i class="fab fa-pinterest-p"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="../js/app.js"></script>
+  <script src="../js/discography.js"></script>
+</html>

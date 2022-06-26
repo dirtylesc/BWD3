@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style_2.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="../css/admin_statistics.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <title>Admin - Statistics - DirtyLesc</title>
+</head>
+<body>
+    <div class="root">
+        <div class="row">
+            <div class="head col-md-12 container-fluid position-fixed">
+                <div class="bar d-flex">
+                  <div class="bar_smaller">
+                    <i class="fas fa-bars" id="bar_smaller_icon"></i>
+                  </div>
+                  <div
+                    class="bar_logo flex-grow-1 justify-content-lg-start align-content-center"
+                  >
+                    <a href="index.html" class=""><img src="../Images/logo_2.jpg" alt="" /></a>
+                  </div>
+                  <div
+                    class="bar_list flex-grow-2 justify-content-center align-items-center"
+                  >
+                    <ul class="main_ul align-items-center">
+                      <li>
+                        <a href="index.html">Home</i></a>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Pages<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="discography.html">Discography</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="">Find a store</a></li>
+                            <li><a href="">FAQ</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Shop<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="discography.html">Discography</a></li>
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="">Find a store</a></li>
+                            <li><a href="">FAQ</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="position-relative">
+                        <a href="">Blog<i class="fas fa-angle-down"></i></a>
+                        <div class="menu position-absolute">
+                          <ul>
+                            <li><a href="">Blog Grid</a></li>
+                            <li><a href="">Blog List</a></li>
+                            <li><a href="">Blog Details</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div
+                    class="bar_function flex-grow-1 justify-content-end align-items-center"
+                  >
+                  </div>
+                </div>
+            </div>
+            <div class="template col-md-12">
+              <div class="container flex col-md-12 justify-content-between position-relative">
+                <div class="template_left_">  
+                  <ul>
+                    <li><a href="###"><span>Product</span></a></li>
+                    <li><a href="###"><span>Statistics</span></a></li>
+                  </ul>
+                </div>
+                <div class="template_right_">
+                  <!-- <div class="template_right_bar flex align-items-center">
+                    <div class="bar_function flex align-items-center">
+                      <div class="search_pro flex align-items-center">
+                        <i class="fas fa-search" id="icon_search"></i><span>Search</span>
+                      </div>
+                      <div class="add_pro flex align-items-center">
+                        <i class="fas fa-plus"></i><span>Add Product</span>
+                      </div>
+                    </div>
+                    <div class="bar_info flex align-items-center">
+                      <i class="fas fa-bell"></i>
+                      <i class="fas fa-comment-alt"></i>
+                      <div class="user-function">
+                        <div class="user_login">
+                            <input type="checkbox" id="user_up">
+                            <label for="user_up" class="flex align-items-center">
+                                <img src="/Images/user.jpg" alt=""/><span>'Dirty' Tommy</span></label>
+                            <div class="function">
+                                <div class="name">
+                                    <b style="font-size: 1.1rem;">Thomas Shelby</b>
+                                    <p>Peaky Blinder</p>
+                                </div>
+                                <ul id="user_down">
+                                    <li id="my_profile"></li>
+                                    <li><i class="fas fa-user-edit"></i><a href="">Edit Profile</a></li>
+                                    <li><i class="fab fa-cc-paypal"></i><a href="">Credit Card</a></li>
+                                    <li><i class="fas fa-question-circle"></i><a href="">Help</a></li>
+                                    <li onclick="javacript:logout_account()" id="log_out_btn"><i class="fas fa-sign-out-alt"></i><a href="###">Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div> -->
+                  
+                  <div class="template_right_full_table flex position-relative">
+                    <input type="checkbox" style="display: none;" id="ex_more">
+                    <div class="template_right_table product col-12">
+                      <div class="template_right_table_title">
+                        <h3>All Product</h3>
+                        <p>Top sales of last month</p>
+                      </div>
+                      <table class="table_sortable">
+                        <thead>
+                          <tr id="tr_main">
+                            <th>Product</th>
+                            <th>Name <i class="fas fa-angle-down" style="max-width: max-content; margin-left: .2rem;"></i></th>
+                            <th style="z-index: 2;">Quantity<i class="fas fa-angle-down" style="max-width: max-content; margin-left: .3rem;"></i></th>
+                            <th>Sold <i class="fas fa-angle-down" style="max-width: max-content; margin-left: .2rem;"></i></th>
+                            <th>Total <i class="fas fa-angle-down" style="max-width: max-content; margin-left: .2rem;"></i></th>
+                            <th>Function</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                    <div class="template_right_table user col-12">
+                      <div class="template_right_table_title">
+                        <h3>All Customers</h3>
+                        <p>Top customers of last month</p>
+                      </div>
+                      <table class="table_sortable">
+                        <thead>
+                          <tr id="tr_main">
+                            <th>Customer</th>
+                            <th>Name <i class="fas fa-angle-down" style="max-width: max-content; margin-left: .2rem;"></i></th>
+                            <th>Orders count<i class="fas fa-angle-down" style="max-width: max-content; margin-left: .3rem;"></i></th>
+                            <th>Total money <i class="fas fa-angle-down" style="max-width: max-content; margin-left: .2rem;"></i></th>
+                            <th>Function</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                    </div>
+                    <div class="extends_more">
+                        <label for="ex_more">
+                            <h5 class="fs14 fw600">Extend More</h5>
+                        </label>
+                    </div>
+                  </div>
+                  <div class="slider_controls col-md-12">
+                    <a href="###" class="left carousel-control disabled" href="#carousel-simple" role="button" data-slide="prev">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                    <a href="###" class="right carousel-control" href="#carousel-simple" role="button" data-slide="next">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="../js/admin_statistics.js"></script>
+</html>
